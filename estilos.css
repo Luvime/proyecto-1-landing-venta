@@ -1,0 +1,138 @@
+header {
+    display: flex;
+    background-color: rgb(12, 173, 119);
+    justify-content: space-between;
+    padding: 10px;
+    min-height: 70px;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a {
+    font-weight: 700;
+    padding-right: 15px;
+    align-items: center;
+}
+
+nav a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 50px;
+    height: 60px;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    min-height: 100vh;
+    background: linear-gradient(rgba(29, 38, 61, 0.75), rgba(29, 38, 61, 0.75)), url(fondo\ carton.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+main .titulo {
+    text-align: center;
+}
+
+main img {
+    margin: 15px;
+    width: 500px;
+    height: 700px;
+
+}
+
+@media (max-width: 610px) {
+    header {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 340px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.container2 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 50px;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 15px;
+}
+
+article {
+    max-width: 270px;
+}
+
+article h6 {
+    font-size: 16px;
+}
+
+article img {
+    width: 270px;
+    height: 270px;
+    border-radius: 5%;
+    background-color: beige;
+    object-fit: cover;
+}
+
+article .nombre-producto {
+    text-align: center;
+}
+
+article .descripcion {
+    color: gray;
+}
+
+article .medidas {
+    color: gray;
+}
+
+article .precio {
+    color: blue;
+    margin-top: 2px;
+    font-weight: 700;
+}
+
+.container4 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 50px;
+}
+
+.container5 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center
+}
+
+.container5 img{
+    width: 150px;
+    height: 150px;
+    border-radius:5px;
+    margin: 55px;
+    display: flex;
+    object-fit: cover;
+}

@@ -34,24 +34,23 @@ header img {
 }
 
 main {
-    display: grid;
-    place-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    display: flex;
+    align-items: center;
     min-height: 100vh;
     background: linear-gradient(rgba(29, 38, 61, 0.75), rgba(29, 38, 61, 0.75)), url(fondo\ carton.png) no-repeat center center fixed;
     background-size: cover;
 }
 
-main .titulo {
-    text-align: center;
+.titulo {
+    margin: 15px;
 }
 
 main img {
-    margin: 15px;
+    margin: 5px;
     width: 500px;
     height: 700px;
-
 }
+
 
 @media (max-width: 610px) {
     header {
@@ -66,6 +65,23 @@ main img {
     }
 }
 
+@media (max-width: 610px) {
+    main {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 610px) {
+    .container5 {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 610px) {
+    footer {
+        flex-direction: column;
+    }
+}
 .container2 {
     flex-direction: row;
     flex-wrap: wrap;
